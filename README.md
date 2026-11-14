@@ -148,21 +148,4 @@ Los tiempos promedio obtenidos tras 5 repeticiones independientes sobre copias e
 
 ![Gráfica comparativa Caso Promedio vs. Peor Caso](experiments/grafica_piloto.png)
 
----
 
-## Matriz de Cumplimiento de la Rúbrica (Bitácora 2)
-
-| Requisito de la Asignación | Estado | Implementación / Ubicación |
-| :--- | :---: | :--- |
-| **Algoritmos mínimos:** Heapsort y Quicksort | **Completo** | `src/ordenamiento.py` (Heapsort in-place, Quicksort 3-vías y Quicksort Lomuto). |
-| **Punto 6:** Código Python 3 funcional y legible | **Completo** | Código estructurado, PEP 8, nombres de dominio industrial SIDOR, modularizado en `src/`. |
-| **Punto 7:** Mínimo 5 unitarias (límites) | **Completo** | 6 pruebas unitarias implementadas en `tests/test_ordenamiento.py`. |
-| **Punto 7:** 2 pruebas con Hypothesis | **Completo** | 2 pruebas basadas en propiedades (`test_07` y `test_08`). |
-| **Punto 7:** 1 prueba diferencial contra `sorted()` | **Completo** | 1 prueba diferencial estricta (`test_09`) contra `sorted()` y `heapq.nlargest()`. |
-| **Punto 7:** Semilla fija y reproducible | **Completo** | Semilla `2026` fijada en el generador y en el script experimental. |
-| **Punto 8:** Al menos 3 tamaños de entrada | **Completo** | 4 tamaños evaluados en caso promedio (1.000 a 10.000) y 4 en peor caso (500 a 2.000). |
-| **Punto 8:** Al menos 3 repeticiones | **Completo** | 5 repeticiones por cada configuración (calculando media y desviación estándar). |
-| **Punto 8:** Ambiente documentado (CPU, RAM, Python) | **Completo** | Especificaciones de Intel Core i5-13420H, 16 GB RAM, Windows 11, Python 3.12.16. |
-| **Punto 8:** Gráfica comparativa | **Completo** | Generada en `experiments/grafica_piloto.png` (resolución 300 DPI, escala logarítmica). |
-| **Punto 8:** ½ página con plan Parte 2 e hipótesis | **Completo** | Redactada y formateada en `Equipo1_Bitacora2.docx` con hipótesis H₁, H₂, H₃ y gráfica insertada. |
-| **Estructura del Repositorio:** README, requirements, src, tests, experiments | **Completo** | Estructura de carpetas normalizada y verificada. |
