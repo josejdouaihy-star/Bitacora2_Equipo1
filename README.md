@@ -9,10 +9,10 @@
 
 ### Descripción del Problema y Caso de Uso Realista (SIDOR)
 
-En el **Centro de Cómputo de la Siderúrgica del Orinoco (SIDOR)**, los sistemas de supervisión SCADA y telemetría de planta (Hornos de Arco Eléctrico, Reducción Directa Midrex y Trenes de Laminación) generan ráfagas masivas de telemetría y alarmas técnicas que se consolidan en ventanas rodantes de 60 segundos.
+En el **Centro de Cómputo de la Siderúrgica del Orinoco (SIDOR)**, los sistemas de supervisión SCADA y telemetría de planta (Hornos de Arco Eléctrico, Reducción Directa Midrex y Trenes de Laminación) generan ráfagas masivas de telemetría y alarmas técnicas que se consolidan en ventanas rodantes de 60 segundos. Los orígenes provienen de: `alto horno`, `laminador`, `ERP`, `mainframe` o `enlace de planta`.
 
-Cada evento se modela con la tupla `(id, timestamp, origen, criticidad)` calculada mediante la métrica ponderada:
-`criticidad = 100 × Severidad + 10 × Impacto + 5 × Desviación` (rango normalizado entre 0 y 1000).
+Cada evento se modela con la tupla `(id, timestamp, origen, criticidad)` calculada mediante la métrica ponderada oficial del proyecto:
+`criticidad = 100 × severidad + 80 × impacto + 20 × desviación` (rango normalizado en [0, 1000]).
 
 Para garantizar la toma de decisiones operativas y la trazabilidad histórica, el sistema genera dos salidas principales:
 
