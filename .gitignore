@@ -1,0 +1,14 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing & Hypothesis
+.hypothesis/
+.pytest_cache/
+.coverage
+
+# Temporary files
+~$*.docx
+*.tmp
+*.bak
