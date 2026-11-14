@@ -8,7 +8,9 @@ __pycache__/
 .pytest_cache/
 .coverage
 
-# Temporary files
+# Temporary and archive files
 ~$*.docx
 *.tmp
 *.bak
+*.rar
+*.zip

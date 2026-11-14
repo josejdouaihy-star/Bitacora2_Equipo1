@@ -59,7 +59,7 @@ Las mediciones del Punto 8 fueron recolectadas en el siguiente entorno de hardwa
 | Componente | Especificación Técnica |
 | :--- | :--- |
 | **Procesador (CPU)** | 13th Gen Intel(R) Core(TM) i5-13420H @ 2.10 GHz (12 hilos lógicos) |
-| **Memoria RAM** | 16.0 GB DDR5 (15.64 GB utilizables) |
+| **Memoria RAM** | 16.0 GB DDR4 (15.64 GB utilizables) |
 | **Sistema Operativo** | Windows 11 Home Single Language (64 bits, arquitectura AMD64) |
 | **Versión de Python** | Python 3.12.16 (CPython, build oficial de 64 bits) |
 | **Semilla Aleatoria** | `2026` (Fijada para total reproducibilidad de los lotes sintéticos) |
